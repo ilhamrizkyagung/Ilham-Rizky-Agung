@@ -1,0 +1,30 @@
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class mobil1 {
+    String warna;
+    int tahunproduksi;
+}
+===============================
+===============================
+
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class mobilberaksi {
+    public static void main(String[] args) {
+        mobil1 mobilIlham = new mobil1();
+        
+        mobilIlham.warna = "blue";
+        mobilIlham.tahunproduksi = 2005;
+        
+        System.out.println("warna: " + mobilIlham.warna);
+        System.out.println("tahun produksi: " + mobilIlham.tahunproduksi);
+    }
+}
