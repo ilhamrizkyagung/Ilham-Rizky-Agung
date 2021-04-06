@@ -1,0 +1,51 @@
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class Bank {
+    int saldo, simpanUang,ambilUang;
+    
+    public Bank(){
+        this.saldo=100000;
+        this.ambilUang=150000;
+        this.simpanUang=500000;
+        
+    }
+    
+    public void saldo (int saldo, int simpanUang, int ambilUang){
+        System.out.println("selamat datang di Bank Ilham");
+        System.out.println("saldo saat ini : " + "Rp." + saldo);
+        
+    }
+    
+    public void simpanUang(int simpanUang){
+        saldo = saldo+simpanUang;
+        System.out.println("Simpan Uang   = " + simpanUang);
+        System.out.println("Saldo saat ini : Rp. " + saldo);
+        System.out.println("================================");
+    }
+    public void ambilUang(int ambilUang){
+        saldo = saldo-ambilUang;
+        System.out.println("Ambil Uang   = " + ambilUang);
+        System.out.println("saldo saat ini : Rp. "+ saldo);
+    }
+}
+===================================================================
+===================================================================
+
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class BankBeraksi {
+    public static void main(String[] args) {
+        Bank BankIlham = new Bank();
+        BankIlham.saldo(100000, 500000, 150000);
+        BankIlham.simpanUang(500000);
+        BankIlham.ambilUang(150000);
+    }
+}
