@@ -1,0 +1,40 @@
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class Matematika {
+    void pertambahan(int a, int b){
+        System.out.println("hasil = " + (a+b));
+        
+    }
+    void pengurangan(int a, int b){
+        System.out.println("hasil = " + (a-b));
+    }
+    void perkalian(int a, int b){
+        System.out.println("hasil = " + (a*b));
+    }
+    void pembagian(int a, int b){
+        System.out.println("hasil = " + (a/b));
+    }
+}
+================================================
+================================================
+
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class MatematikaBeraksi {
+   public static void main(String[] args) {
+       Matematika matematikaseru = new Matematika();
+       
+       matematikaseru.pertambahan(15,10);
+       matematikaseru.pengurangan(25,5);
+       matematikaseru.perkalian(5,8);
+       matematikaseru.pembagian(50,2);
+   }
+}
