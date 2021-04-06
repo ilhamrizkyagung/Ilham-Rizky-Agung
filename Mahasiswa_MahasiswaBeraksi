@@ -1,0 +1,37 @@
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class Mahasiswa {
+    String membaca;
+    int nyontek;
+    String modifikasi;
+    
+    
+    void printMahasiswa(){
+        System.out.println("Cara membaca cepat : \n");
+                            + membaca +"\n"
+                            + membaca +"\n"
+                            + membaca);
+        System.out.println("Ada " + nyontek + "Cara nyontek yang aman");
+        System.out.println("Cara memodifikasi contekan agar tidak ketahuan : " + modifikasi);
+        
+    }
+}
+================================================================================================
+================================================================================================
+
+package mhs;
+
+public class MahasiswaBeraksi {
+    public static void main(String[] args) {
+        Mahasiswa mahasiswaku = new Mahasiswa();
+        
+        mahasiswaku.membaca = "Minum air putih yang banyak";
+        mahasiswaku.nyontek = 100;
+        mahasiswaku. modifikasi = "Belajar pangkal pandai";
+        mahasiswaku.printMahasiswa();
+    }
+}
