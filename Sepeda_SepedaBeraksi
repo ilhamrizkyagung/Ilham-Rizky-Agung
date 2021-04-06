@@ -1,0 +1,40 @@
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class Sepeda {
+    int gir;
+    
+    void setGir(int penguranganGir) {
+        gir=gir- penguranganGir;
+    }
+    
+    int getGir(){
+        return gir;
+    }
+}
+========================================
+========================================
+
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class SepedaBeraksi {
+    public static void main(String[] args) {
+        Sepeda sepedailham = new Sepeda();
+        
+        
+               sepedailham.setGir(1);
+               /*Variabel bisa diubah atau tidak sengaja diubah.
+               Hal ini berbahaya dan sering menimbulkan bug.
+               Berikan access modifikasi private pada instance variable
+         */
+               sepedailham.gir = 5-2;
+               System.out.println("Gir saat ini" + sepedailham.getGir());
+    }
+}
