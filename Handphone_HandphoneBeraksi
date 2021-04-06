@@ -1,0 +1,42 @@
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class Handphone {
+    String hidupkan;
+    String lakukanPanggilan;
+    String kirimSMS;
+    String matikan;
+    
+    public void Handphone() {
+        System.out.println("Handphone hidup" + hidupkan);
+        System.out.println("Kring, Kring, Kring" + lakukanPanggilan);
+        System.out.println("Dung, Dung" + kirimSMS);
+        System.out.println("Handphone mati" + matikan);
+        
+        
+    }
+}
+========================================================================
+========================================================================
+
+package tugas.pak.gunawan;
+
+/**
+ *
+ * @author Ilham
+ */
+public class HandphoneBeraksi {
+    public static void main(String[] args) {
+        Handphone handphoneku = new Handphone();
+        
+                  handphoneku.hidupkan = "...";
+                  handphoneku.lakukanPanggilan = "... panggilan dlakukan";
+                  handphoneku.kirimSMS = "... SMS berhasil Terkirim";
+                  handphoneku.matikan = "...";
+                  handphoneku.Handphone();
+        
+    }
+}
